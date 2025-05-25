@@ -1,4 +1,12 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,500,500italic,400italic,300italic,100italic,700italic);@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);@import url(https://use.fontawesome.com/releases/v5.11.2/css/all.css);@import url(https://use.fontawesome.com/releases/v5.11.2/css/v4-shims.css);button,input[type="button"],input[type="reset"],input[type="submit"] {
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,500,500italic,400italic,300italic,100italic,700italic);
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+@import url(https://use.fontawesome.com/releases/v5.11.2/css/all.css);
+@import url(https://use.fontawesome.com/releases/v5.11.2/css/v4-shims.css);
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
     appearance: none;
     background-color: #477dca;
     border: 0;
@@ -19,17 +27,30 @@
     white-space: nowrap
 }
 
-button:hover,button:focus,input[type="button"]:hover,input[type="button"]:focus,input[type="reset"]:hover,input[type="reset"]:focus,input[type="submit"]:hover,input[type="submit"]:focus {
+button:hover,
+button:focus,
+input[type="button"]:hover,
+input[type="button"]:focus,
+input[type="reset"]:hover,
+input[type="reset"]:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus {
     background-color: #3964a2;
     color: #fff
 }
 
-button:disabled,input[type="button"]:disabled,input[type="reset"]:disabled,input[type="submit"]:disabled {
+button:disabled,
+input[type="button"]:disabled,
+input[type="reset"]:disabled,
+input[type="submit"]:disabled {
     cursor: not-allowed;
     opacity: 0.5
 }
 
-button:disabled:hover,input[type="button"]:disabled:hover,input[type="reset"]:disabled:hover,input[type="submit"]:disabled:hover {
+button:disabled:hover,
+input[type="button"]:disabled:hover,
+input[type="reset"]:disabled:hover,
+input[type="submit"]:disabled:hover {
     background-color: #477dca
 }
 
@@ -40,7 +61,9 @@ fieldset {
     padding: 1.5rem
 }
 
-input,label,select {
+input,
+label,
+select {
     display: block;
     font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
     font-size: 1rem
@@ -98,7 +121,9 @@ td {
     padding: 0.75rem 0
 }
 
-tr,td,th {
+tr,
+td,
+th {
     vertical-align: middle
 }
 
@@ -110,7 +135,8 @@ hr {
     margin: 1.5rem 0
 }
 
-img,picture {
+img,
+picture {
     margin: 0;
     max-width: 100%
 }
@@ -119,7 +145,9 @@ html {
     box-sizing: border-box
 }
 
-*,*::after,*::before {
+*,
+*::after,
+*::before {
     box-sizing: inherit
 }
 
@@ -219,7 +247,18 @@ body {
         content: none !important
     }
 
-    .col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12 {
+    .col-sm-1,
+    .col-sm-2,
+    .col-sm-3,
+    .col-sm-4,
+    .col-sm-5,
+    .col-sm-6,
+    .col-sm-7,
+    .col-sm-8,
+    .col-sm-9,
+    .col-sm-10,
+    .col-sm-11,
+    .col-sm-12 {
         float: left
     }
 
@@ -275,7 +314,8 @@ body {
         width: 100%
     }
 
-    .no-print,.no-print * {
+    .no-print,
+    .no-print * {
         display: none !important
     }
 }
@@ -361,6 +401,7 @@ body {
     text-decoration-line: underline;
     transition: 1.5s;
 }
+
 .dark .link:hover {
     font-size: 1.5rem;
     color: #4c7ace;
@@ -383,7 +424,12 @@ body {
     }
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: Roboto, sans-serif;
     font-size: 1rem;
     line-height: 1.2;
@@ -391,7 +437,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-    margin: 0 0 0.75rem
+    margin: 0 0 0.75rem;
+    padding: 10px;
 }
 
 a {
@@ -399,7 +446,9 @@ a {
     transition: color 150ms ease
 }
 
-a:active,a:focus,a:hover {
+a:active,
+a:focus,
+a:hover {
     color: #4c7ace
 }
 
@@ -415,12 +464,12 @@ h2 {
 }
 
 h3 {
-    font-weight: 300;
     font-size: 3rem;
     text-align: center;
     border-bottom: dashed 2px #CCCCCC;
-    padding-bottom: 10px;
-    margin-bottom: 40px
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    color: rgb(68, 120, 179);
 }
 
 @media print {
@@ -435,8 +484,9 @@ h4 {
     margin-bottom: 3px
 }
 
-p,ul {
-    font-size: 1.6rem;
+p,
+ul {
+    font-size: 1.7rem;
     text-align: justify
 }
 
@@ -444,14 +494,14 @@ a i {
     font-size: 1.6rem
 }
 
-mark {
+mark { 
     padding: 2px 4px;
     font-size: 90%;
     color: #487565;
     background-color: #333;
     border-radius: 3px;
-    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,0.25);
-    box-shadow: inset 0 -1px 0 rgba(0,0,0,0.25)
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25)
 }
 
 .dark {
@@ -469,7 +519,7 @@ mark {
 }
 
 ul.icons a:hover {
-    background: rgba(0,0,0,0.025)
+    background: rgba(0, 0, 0, 0.025)
 }
 
 ul.icons li {
@@ -508,7 +558,7 @@ ul.icons a {
 
 @media screen and (max-width: 768px) {
     .icons {
-        text-align:center
+        text-align: center
     }
 }
 
@@ -532,7 +582,7 @@ ul.icons a {
 
 @media screen and (max-width: 768px) {
     .header-contianer div {
-        text-align:center
+        text-align: center
     }
 
     .header-right p {
@@ -565,7 +615,7 @@ ul.icons a {
 
 @media only screen and (max-width: 992px) {
     .into-text-1 {
-        margin-top:20px
+        margin-top: 20px
     }
 }
 
@@ -596,7 +646,7 @@ ul.icons a {
 
 @media screen and (max-width: 768px) {
     .layout .details {
-        text-align:center !important
+        text-align: center !important
     }
 
     .layout .details p {
@@ -614,7 +664,7 @@ ul.icons a {
     font-size: 2rem
 }
 
-.layout .details  {
+.layout .details {
     font-size: 1.5rem
 }
 
@@ -638,21 +688,31 @@ ul.icons a {
     flex-direction: row-reverse
 }
 
-.layout-right .details,.layout-top-right .details {
+.layout-right .details,
+.layout-top-right .details {
     text-align: right
 }
 
 @media screen and (max-width: 768px) {
-    .layout-left,.layout-right {
-        flex-direction:column
+
+    .layout-left,
+    .layout-right {
+        flex-direction: column
     }
 }
 
-.layout-top-middle,.layout-top,.layout-top-right {
+.layout-top-middle,
+.layout-top,
+.layout-top-right {
     flex-direction: column
 }
 
-.layout-top-middle .details,.layout-top-middle .content,.layout-top .details,.layout-top .content,.layout-top-right .details,.layout-top-right .content {
+.layout-top-middle .details,
+.layout-top-middle .content,
+.layout-top .details,
+.layout-top .content,
+.layout-top-right .details,
+.layout-top-right .content {
     width: 100%
 }
 
