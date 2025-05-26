@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <title>Pouya Ghadirizade | Visual Effect Artist</title>
   <meta name="generator" content="Jekyll v3.9.0" />
@@ -19,6 +19,8 @@
 
   <link rel="stylesheet" href="css/styles.css">
   <link rel="shortcut icon" type="image/x-icon" href="asset/favicon.ico">
+  <!-- Swiper CSS (keep this in <head> or before this section) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 </head>
 
 <body class="">
@@ -78,8 +80,8 @@
           </div>
           <div class="col-xs-12 col-sm-8 col-md-9 col-print-12">
             <p>Hi, I’m Pouya Ghadirizade, a Visual Effects Artist and Senior Compositor with a strong background in
-              solving technical challenges and building visually compelling shots. I specialize in <mark>compositing and
-                Matt Paint</mark>, working closely with teams to ensure both the creative and technical aspects of
+              solving technical challenges and building visually compelling shots. I specialize in <mark>Compositing and
+                Matte Paint</mark>, working closely with teams to ensure both the creative and technical aspects of
               every shot
               align seamlessly.
 
@@ -161,121 +163,262 @@
 
 
 
-      <h3 style="text-align: center;">Projects</h3>
-      <div id="projects-container"
-        style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; text-align: center; color: white;">
+      <div class="container list-container">
+        <div class="custom-projects-section">
+          <h3>LATEST PROJECTS</h3>
+          <div class="swiper-container custom-swiper">
+            <div class="swiper-wrapper">
+              <!-- Example project cards -->
+              <div class="swiper-slide project-slide">
+                <img src="asset/tasian.png" alt="Tasian">
 
-        <!-- Projects Grid (4 columns x 3 rows = 12 items) -->
-        <div class="project-box" style="flex: 1 1 22%;">
-          <img src="asset\tasian.png" alt="Tasiyan Poster" style="width: 20%; border-radius: 8px; margin-bottom: 10px;">
-          <h4 style="font-weight: bold;">Tasiyan</h4>
-          <a href="https://www.imdb.com/title/tt31998398/reference/?ref_=nm_flmg_job_1_cdt_t_1" target="_blank">
-            <i class="fab fa-imdb" style="font-size: 24px; color: #f5c518;"></i>
-          </a>
+                <a href="https://www.imdb.com/title/tt31998398/" target="_blank"><i
+                    class="fab fa-imdb imdb-icon"></i></a>
+              </div>
+              <div class="swiper-slide project-slide">
+                <img src="asset/1001 shab.png" alt="Hezaro Yek Shab">
+
+                <a href="https://www.imdb.com/title/tt26660220/" target="_blank"><i
+                    class="fab fa-imdb imdb-icon"></i></a>
+              </div>
+              <div class="swiper-slide project-slide">
+                <img src="asset/souvashun.png" alt="Suvashun">
+
+                <a href="https://www.imdb.com/title/tt30759893/" target="_blank"><i
+                    class="fab fa-imdb imdb-icon"></i></a>
+              </div>
+              <div class="swiper-slide project-slide">
+                <img src="asset/darentehaye shab.png" alt="At the End of the Night Poster">
+
+                <a href="https://www.imdb.com/title/tt31739473/" target="_blank"><i
+                    class="fab fa-imdb imdb-icon"></i></a>
+              </div>
+              <div class="swiper-slide project-slide">
+                <img src="asset/ziba sedayam kon.png" alt="Ziba Sedayam Kon">
+
+                <a href="https://www.imdb.com/title/tt35624450/" target="_blank"><i
+                    class="fab fa-imdb imdb-icon"></i></a>
+              </div>
+              <div class="swiper-slide project-slide">
+                <img src="asset/kill the game.png" alt="Kill the Game">
+
+                <a href="https://www.imdb.com/title/tt35603007/" target="_blank"><i
+                    class="fab fa-imdb imdb-icon"></i></a>
+              </div>
+              <div class="swiper-slide project-slide">
+                <img src="asset/zoodpaz.png" alt="Pressure Cooker">
+
+                <a href="https://www.imdb.com/title/tt30750835/" target="_blank"><i
+                    class="fab fa-imdb imdb-icon"></i></a>
+              </div>
+              <div class="swiper-slide project-slide">
+                <img src="asset/6 am.png" alt="6 AM Poster">
+
+                <a href="https://www.imdb.com/title/tt30804552/" target="_blank"><i
+                    class="fab fa-imdb imdb-icon"></i></a>
+              </div>
+              <div class="swiper-slide project-slide">
+                <img src="asset/afee.png" alt="Viper of Tehran">
+
+                <a href="https://www.imdb.com/title/tt31470925/" target="_blank"><i
+                    class="fab fa-imdb imdb-icon"></i></a>
+              </div>
+              <div class="swiper-slide project-slide">
+                <img src="asset/ghahve turk.png" alt="Turkish Coffee">
+
+                <a href="https://www.imdb.com/title/tt27754096/" target="_blank"><i
+                    class="fab fa-imdb imdb-icon"></i></a>
+              </div>
+              <div class="swiper-slide project-slide">
+                <img src="asset/pikolo.png" alt="Picolo Poster">
+
+                <a href="https://www.imdb.com/title/tt28289353/" target="_blank"><i
+                    class="fab fa-imdb imdb-icon"></i></a>
+              </div>
+              <div class="swiper-slide project-slide">
+                <img src="asset/rahayam kon.png" alt="Rahayam kon">
+
+                <a href="https://www.imdb.com/title/tt22030306/" target="_blank"><i
+                    class="fab fa-imdb imdb-icon"></i></a>
+              </div>
+            </div>
+            <!-- Navigation -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="projects-footer">
+            <span class="project-title" id="current-project-title">TASIAN</span>
+            <div class="view-all-projects">
+              <a href="#projects">VIEW ALL PROJECTS</a>
+            </div>
+          </div>
         </div>
-
-        <div class="project-box" style="flex: 1 1 22%;">
-          <img src="asset\1001 shab.png" alt="Tasiyan Poster"
-            style="width: 20%; border-radius: 8px; margin-bottom: 10px;">
-          <h4 style="font-weight: bold;">Hezaro Yek Shab</h4>
-          <a href="https://www.imdb.com/title/tt26660220/reference/?ref_=nm_flmg_job_1_unrel_t_2" target="_blank">
-            <i class="fab fa-imdb" style="font-size: 24px; color: #f5c518;"></i>
-          </a>
-        </div>
-
-        <div class="project-box" style="flex: 1 1 22%;">
-          <img src="asset\souvashun.png" alt="Tasiyan Poster"
-            style="width: 30%; border-radius: 8px; margin-bottom: 10px;">
-          <h4 style="font-weight: bold;">Suvashun</h4>
-          <a href="https://www.imdb.com/title/tt30759893/reference/?ref_=nm_flmg_job_1_unrel_c_1" target="_blank">
-            <i class="fab fa-imdb" style="font-size: 24px; color: #f5c518;"></i>
-          </a>
-        </div>
-
-        <div class="project-box" style="flex: 1 1 22%;">
-          <img src="asset\darentehaye shab.png" alt="Tasiyan Poster"
-            style="width: 20%; border-radius: 8px; margin-bottom: 10px;">
-          <h4 style="font-weight: bold;">At the End of the Night</h4>
-          <a href="https://www.imdb.com/title/tt31739473/reference/?ref_=nm_flmg_job_1_cdt_t_6" target="_blank">
-            <i class="fab fa-imdb" style="font-size: 24px; color: #f5c518;"></i>
-          </a>
-        </div>
-
-        <div class="project-box" style="flex: 1 1 22%;">
-          <img src="asset\ziba sedayam kon.png" alt="Tasiyan Poster"
-            style="width: 20%; border-radius: 8px; margin-bottom: 10px;">
-          <h4 style="font-weight: bold;">Call Me Ziba</h4>
-          <a href="https://www.imdb.com/title/tt35624450/reference/?ref_=nm_flmg_job_1_cdt_t_2" target="_blank">
-            <i class="fab fa-imdb" style="font-size: 24px; color: #f5c518;"></i>
-          </a>
-        </div>
-
-        <div class="project-box" style="flex: 1 1 22%;">
-          <img src="asset\kill the game.png" alt="Tasiyan Poster"
-            style="width: 20%; border-radius: 8px; margin-bottom: 10px;">
-          <h4 style="font-weight: bold;">Kill the Game</h4>
-          <a href="https://www.imdb.com/title/tt35603007/reference/?ref_=nm_flmg_job_1_cdt_t_3" target="_blank">
-            <i class="fab fa-imdb" style="font-size: 24px; color: #f5c518;"></i>
-          </a>
-        </div>
-
-        <div class="project-box" style="flex: 1 1 22%;">
-          <img src="asset\zoodpaz.png" alt="Tasiyan Poster"
-            style="width: 20%; border-radius: 8px; margin-bottom: 10px;">
-          <h4 style="font-weight: bold;">Pressure Cooker</h4>
-          <a href="https://www.imdb.com/title/tt30750835/reference/?ref_=nm_flmg_job_1_cdt_t_4" target="_blank">
-            <i class="fab fa-imdb" style="font-size: 24px; color: #f5c518;"></i>
-          </a>
-        </div>
-
-        <div class="project-box" style="flex: 1 1 22%;">
-          <img src="asset\6 am.png" alt="Tasiyan Poster" style="width: 20%; border-radius: 8px; margin-bottom: 10px;">
-          <h4 style="font-weight: bold;">6 AM</h4>
-          <a href="https://www.imdb.com/title/tt30804552/reference/?ref_=nm_flmg_job_1_cdt_t_5" target="_blank">
-            <i class="fab fa-imdb" style="font-size: 24px; color: #f5c518;"></i>
-          </a>
-        </div>
-
-        <div class="project-box" style="flex: 1 1 22%;">
-          <img src="asset\afee.png" alt="Tasiyan Poster" style="width: 20%; border-radius: 8px; margin-bottom: 10px;">
-          <h4 style="font-weight: bold;">Viper of Tehran</h4>
-          <a href="https://www.imdb.com/title/tt31470925/reference/?ref_=nm_flmg_job_1_cdt_c_7" target="_blank">
-            <i class="fab fa-imdb" style="font-size: 24px; color: #f5c518;"></i>
-          </a>
-        </div>
-
-        <div class="project-box" style="flex: 1 1 22%;">
-          <img src="asset\ghahve turk.png" alt="Tasiyan Poster"
-            style="width: 20%; border-radius: 8px; margin-bottom: 10px;">
-          <h4 style="font-weight: bold;">Turkish Coffee</h4>
-          <a href="https://www.imdb.com/title/tt27754096/reference/?ref_=nm_flmg_job_1_cdt_c_8" target="_blank">
-            <i class="fab fa-imdb" style="font-size: 24px; color: #f5c518;"></i>
-          </a>
-        </div>
-
-        <div class="project-box" style="flex: 1 1 22%;">
-          <img src="asset\pikolo.png" alt="Tasiyan Poster" style="width: 20%; border-radius: 8px; margin-bottom: 10px;">
-          <h4 style="font-weight: bold;">Picolo</h4>
-          <a href="https://www.imdb.com/title/tt28289353/reference/?ref_=nm_flmg_job_1_cdt_c_9" target="_blank">
-            <i class="fab fa-imdb" style="font-size: 24px; color: #f5c518;"></i>
-          </a>
-        </div>
-
-        <div class="project-box" style="flex: 1 1 22%;">
-          <img src="asset\rahayam kon.png" alt="Tasiyan Poster"
-            style="width: 20%; border-radius: 8px; margin-bottom: 10px;">
-          <h4 style="font-weight: bold;">Rahayam kon</h4>
-          <a href="https://www.imdb.com/title/tt22030306/reference/?ref_=nm_flmg_job_1_cdt_c_10" target="_blank">
-            <i class="fab fa-imdb" style="font-size: 24px; color: #f5c518;"></i>
-          </a>
-        </div>
-
       </div>
 
-      <!-- No Show More needed since all 12 fit -->
+      <div class="all-projects-section" id="all-projects">
+        <h3>ALL PROJECTS</h3>
+        <div class="projects-grid">
+          <div class="project-item">
+            <img src="asset/tasian.png" alt="Tasian">
+            <p class="project-title">Tasian
+              <a href="https://www.imdb.com/title/tt31998398/" target="_blank">
+                <i class="fab fa-imdb imdb-icon"></i>
+              </a>
+            </p>
+          </div>
+          <div class="project-item">
+            <img src="asset/1001 shab.png" alt="Hezaro Yek Shab">
+            <p class="project-title">Hezaro Yek Shab
+              <a href="https://www.imdb.com/title/tt26660220/" target="_blank">
+                <i class="fab fa-imdb imdb-icon"></i>
+              </a>
+            </p>
+          </div>
+          <div class="project-item">
+            <img src="asset/souvashun.png" alt="Suvashun">
+            <p class="project-title">Suvashun
+              <a href="https://www.imdb.com/title/tt30759893/" target="_blank">
+                <i class="fab fa-imdb imdb-icon"></i>
+              </a>
+            </p>
+          </div>
+          <div class="project-item">
+            <img src="asset/darentehaye shab.png" alt="At the End of the Night Poster">
+            <p class="project-title">At the End of the Night
+              <a href="https://www.imdb.com/title/tt31739473/" target="_blank">
+                <i class="fab fa-imdb imdb-icon"></i>
+              </a>
+            </p>
+          </div>
+          <div class="project-item">
+            <img src="asset/ziba sedayam kon.png" alt="Ziba Sedayam Kon">
+            <p class="project-title">Ziba Sedayam Kon
+              <a href="https://www.imdb.com/title/tt35624450/" target="_blank">
+                <i class="fab fa-imdb imdb-icon"></i>
+              </a>
+            </p>
+          </div>
+          <div class="project-item">
+            <img src="asset/kill the game.png" alt="Kill the Game">
+            <p class="project-title">Kill the Game
+              <a href="https://www.imdb.com/title/tt35603007/" target="_blank">
+                <i class="fab fa-imdb imdb-icon"></i>
+            </p>
+            </a>
+          </div>
+          <div class="project-item">
+            <img src="asset/zoodpaz.png" alt="Pressure Cooker">
+            <p class="project-title">Pressure Cooker
+              <a href="https://www.imdb.com/title/tt30750835/" target="_blank">
+                <i class="fab fa-imdb imdb-icon"></i>
+              </a>
+            </p>
+          </div>
+          <div class="project-item">
+            <img src="asset/6 am.png" alt="6 AM Poster">
+            <p class="project-title">6 AM
+              <a href="https://www.imdb.com/title/tt30804552/" target="_blank">
+                <i class="fab fa-imdb imdb-icon"></i>
+              </a>
+            </p>
+          </div>
+          <div class="project-item">
+            <img src="asset/afee.png" alt="Viper of Tehran">
+            <p class="project-title">Viper of Tehran
+              <a href="https://www.imdb.com/title/tt31470925/" target="_blank">
+                <i class="fab fa-imdb imdb-icon"></i>
+              </a>
+            </p>
+          </div>
+          <div class="project-item">
+            <img src="asset/ghahve turk.png" alt="Turkish Coffee">
+            <p class="project-title">Turkish Coffee
+              <a href="https://www.imdb.com/title/tt27754096/" target="_blank">
+                <i class="fab fa-imdb imdb-icon"></i>
+              </a>
+            </p>
+          </div>
+          <div class="project-item">
+            <img src="asset/pikolo.png" alt="Picolo Poster">
+            <p class="project-title">Picolo
+              <a href="https://www.imdb.com/title/tt28289353/" target="_blank">
+                <i class="fab fa-imdb imdb-icon"></i>
+              </a>
+            </p>
+          </div>
+          <div class="project-item">
+            <img src="asset/rahayam kon.png" alt="Rahayam kon">
+            <p class="project-title">Rahayam kon
+              <a href="https://www.imdb.com/title/tt22030306/" target="_blank">
+                <i class="fab fa-imdb imdb-icon"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="#" class="view-toggle-btn" id="view-less-btn" style="color: white;">VIEW LESS</a>
+        </div>
+      </div>
 
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+      <script>
+        var swiper = new Swiper('.custom-swiper', {
+          slidesPerView: "auto",
+          centeredSlides: true,
+          loop: true,
+          spaceBetween: 30,
+          initialSlide: 1,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          breakpoints: {
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            480: {
+              slidesPerView: 1.5,
+              spaceBetween: 15,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 2.5,
+              spaceBetween: 30,
+            }
+          },
+          on: {
+            init: function () {
+              updateProjectTitle();
+            },
+            slideChange: function () {
+              updateProjectTitle();
+            }
+          }
+        });
 
-    </div>
+        // Updated function to read from alt attribute
+        function updateProjectTitle() {
+          setTimeout(() => {
+            const activeSlide = swiper.slides[swiper.activeIndex];
+            if (activeSlide) {
+              const img = activeSlide.querySelector('img');
+              const title = img ? img.alt.replace(' Poster', '') : '';
+              document.getElementById('current-project-title').textContent = title;
+            }
+          }, 0);
+        }
+
+        // Initialize project title on page load
+        document.addEventListener('DOMContentLoaded', function () {
+          updateProjectTitle();
+        });
+      </script>
+
     </div>
 
 

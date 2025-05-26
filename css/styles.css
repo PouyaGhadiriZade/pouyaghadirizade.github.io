@@ -494,7 +494,7 @@ a i {
     font-size: 1.6rem
 }
 
-mark { 
+mark {
     padding: 2px 4px;
     font-size: 90%;
     color: #487565;
@@ -630,14 +630,15 @@ ul.icons a {
 }
 
 .layout .details {
-    text-align: left
+    text-align: left;
+    font-weight: bold;
 }
 
 .layout .details p {
     margin-bottom: 3px;
     font-size: 1.6rem;
     text-align: inherit;
-    font-weight: 300
+    font-weight: bold;
 }
 
 .layout .details p b {
@@ -767,4 +768,623 @@ p.quote {
         margin-top: 1rem
     }
 
+}
+
+.projects-section {
+    background-color: #000;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.custom-projects-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: #222;
+    /* Match the dark theme background */
+    color: #fff;
+    padding: 60px 20px 40px 20px;
+    border-radius: 0;
+    /* Remove border radius to match other sections */
+    box-shadow: none;
+    /* Remove shadow to match other sections */
+}
+
+/* Make projects section match other sections */
+.projects-section.custom-projects-section {
+    width: 100%;
+    max-width: 1200px;
+    /* or match your .container/.list-container max-width */
+    margin: 60px auto 40px auto;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+    color: #fff;
+    padding: 60px 20px 40px 20px;
+    border-radius: 18px;
+    box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* Swiper container centered and not full width */
+.custom-swiper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    position: relative;
+    z-index: 3;
+}
+
+/* Update project slides for better alignment */
+.project-slide {
+    height: 360px;
+    /* Slightly reduce height */
+    width: 260px;
+    /* Slightly reduce width */
+    margin: 0 auto;
+    background: rgba(20, 20, 20, 0.7);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Update section title to match other sections */
+.custom-projects-section h3 {
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: dashed 2px #CCCCCC;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    color: rgb(68, 120, 179);
+}
+
+/* Update background elements to match container width */
+.project-bg-blur,
+.project-bg-gradient {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 0;
+}
+
+/* Update responsive styles */
+@media (max-width: 1200px) {
+
+    .custom-projects-section,
+    .project-bg-blur,
+    .project-bg-gradient {
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-projects-section {
+        padding: 40px 15px 20px;
+    }
+
+    .project-slide {
+        height: 320px;
+        width: 240px;
+    }
+}
+
+.project-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 400px;
+    width: 280px;
+    max-width: 90vw;
+    margin: 0 auto;
+    background: rgba(20, 20, 20, 0.7);
+    border-radius: 18px;
+    box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+}
+
+.project-slide img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 0;
+    background: #222;
+    box-shadow: none;
+}
+
+/* Project title at the bottom of the card */
+.project-slide h4 {
+    font-family: 'Oswald', 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 6px 0 4px 0;
+    border-radius: 0 0 12px 12px;
+    position: absolute;
+    bottom: 38px;
+    left: 0;
+}
+
+/* IMDb icon below the title */
+.project-slide a {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.imdb-icon {
+    font-size: 1.7rem;
+    color: #f5c518;
+}
+
+.swiper-slide {
+    opacity: 0.5;
+    filter: blur(1px);
+    transition: transform 0.4s, box-shadow 0.4s, opacity 0.4s, filter 0.4s;
+}
+
+.swiper-slide-active {
+    transform: scale(1.08);
+    z-index: 2;
+    opacity: 1;
+    filter: none;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+}
+
+.swiper-slide-next,
+.swiper-slide-prev {
+    opacity: 0.8;
+    filter: blur(0.5px);
+    transform: scale(0.97);
+    z-index: 1;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .project-slide {
+        height: 260px;
+        width: 90vw;
+        min-width: 0;
+    }
+
+    .project-slide img {
+        height: 180px;
+    }
+
+    .project-slide h4 {
+        font-size: 1rem;
+        bottom: 32px;
+    }
+}
+
+/* Blurred background for projects section */
+.project-bg-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-size: cover;
+    background-position: center;
+    filter: blur(32px) brightness(0.5);
+    transition: background-image 0.5s;
+    pointer-events: none;
+}
+
+/* Make sure the section is relative for the background */
+.custom-projects-section {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Ensure swiper and content are above the background */
+.custom-projects-section>*:not(.project-bg-blur) {
+    position: relative;
+    z-index: 1;
+}
+
+.custom-swiper {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.custom-swiper .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+    transition: transform 0.4s cubic-bezier(.4, 2, .6, 1), box-shadow 0.4s;
+    box-shadow: none;
+    opacity: 0.5;
+    filter: blur(1px);
+}
+
+.custom-swiper .swiper-slide-active {
+    transform: scale(1.15);
+    z-index: 2;
+    opacity: 1;
+    filter: none;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+}
+
+.custom-swiper .swiper-slide-next,
+.custom-swiper .swiper-slide-prev {
+    opacity: 0.8;
+    filter: blur(0.5px);
+    transform: scale(0.95);
+    z-index: 1;
+}
+
+.custom-swiper .project-slide img {
+    width: 260px;
+    max-width: 80vw;
+    border-radius: 16px;
+    margin-bottom: 18px;
+    box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.3);
+    background: #222;
+}
+
+.custom-swiper .project-slide h4 {
+    font-family: 'Oswald', 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    color: #fff;
+    text-align: center;
+}
+
+.custom-swiper .imdb-icon {
+    font-size: 2rem;
+    color: #f5c518;
+}
+
+.custom-projects-section .projects-footer {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.custom-projects-section .project-title {
+    display: block;
+    font-family: 'Oswald', 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.custom-projects-section .view-all-projects {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.custom-projects-section .view-all-projects a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+    font-size: 13px;
+}
+
+.custom-projects-section .view-all-projects a:hover {
+    color: #4c7ace;
+}
+
+.custom-projects-section .swiper-button-next,
+.custom-projects-section .swiper-button-prev {
+    color: #fff;
+    top: 50%;
+    width: 44px;
+    height: 44px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.2s;
+}
+
+.custom-projects-section .swiper-button-next:hover,
+.custom-projects-section .swiper-button-prev:hover {
+    background: rgba(76, 122, 206, 0.7);
+}
+
+@media (max-width: 900px) {
+    .custom-swiper {
+        max-width: 100vw;
+    }
+
+    .custom-projects-section .projects-header {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .custom-projects-section {
+        padding: 40px 0 20px 0;
+    }
+
+    .custom-swiper .project-slide img {
+        width: 90vw;
+        max-width: 95vw;
+    }
+
+    .custom-projects-section .section-title {
+        font-size: 1.3rem;
+    }
+
+    .custom-projects-section .project-title {
+        font-size: 1.1rem;
+    }
+}
+
+.project-bg-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    z-index: 2;
+    pointer-events: none;
+    background: linear-gradient(to bottom, #222 0%, rgba(34, 34, 34, 0.7) 60%, rgba(0, 0, 0, 0) 100%);
+}
+
+.project-bg-blur {
+    z-index: 1;
+}
+
+.all-projects-section {
+    display: none;
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px;
+}
+
+.project-item {
+    height: 400px;
+    /* Increased height to accommodate title */
+    background: rgba(20, 20, 20, 0.7);
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-item img {
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+}
+
+.project-item .project-title {
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.9rem;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 0;
+}
+
+.view-toggle-btn {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.view-toggle-btn:hover {
+    color: #4c7ace;
+    text-decoration: none;
+}
+
+/* Mobile First Responsive Design */
+@media screen and (max-width: 768px) {
+
+    /* Header */
+    .header-contianer {
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    /* About section */
+    .profile-img {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 15px;
+    }
+
+    .intro-container p {
+        font-size: 1.4rem;
+        text-align: left;
+    }
+
+    /* Experience section */
+    .layout {
+        margin-top: 2rem;
+    }
+
+    .details h4 {
+        font-size: 1.8rem;
+    }
+
+    .details p {
+        font-size: 1.4rem;
+    }
+
+    .content p,
+    .content ul {
+        font-size: 1.4rem;
+        text-align: left;
+    }
+
+    /* Projects section */
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .project-item {
+        height: auto;
+    }
+
+    .project-item .project-title {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .intro-container p {
+        font-size: 1.5rem;
+    }
+}
+
+/* Swiper responsive adjustments */
+@media screen and (max-width: 600px) {
+    .custom-swiper {
+        padding: 0 10px;
+    }
+
+    .project-slide {
+        height: 300px;
+    }
+
+    .project-slide img {
+        height: 250px;
+    }
+
+    .projects-footer .project-title {
+        font-size: 1.5rem;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+}
+
+/* General responsive improvements */
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Fix for social icons on mobile */
+@media screen and (max-width: 480px) {
+    .icons {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .icons li {
+        padding: 0 5px;
+    }
+
+    .button.button--sacnite {
+        width: 45px;
+        height: 45px;
+    }
+
+    .icons i {
+        font-size: 20px;
+        line-height: 45px;
+    }
+}
+
+/* Improved touch targets for mobile */
+@media (hover: none) and (pointer: coarse) {
+
+    .button,
+    .view-toggle-btn,
+    .project-item a,
+    .icons a {
+        min-height: 44px;
+        min-width: 44px;
+        padding: 12px;
+    }
+}
+
+/* Dark mode improvements */
+@media (prefers-color-scheme: dark) {
+    .dark {
+        background-color: #222;
+    }
+
+    .dark .project-item {
+        background: rgba(20, 20, 20, 0.9);
+    }
 }
